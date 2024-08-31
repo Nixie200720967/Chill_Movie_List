@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="2_1_beranda.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="4_Halaman_Series_Genre.css">
+    <link rel="stylesheet" href="5_genre_pop_up.css">
+    <link rel="stylesheet" href=" 6_GOTGVol3_pop_up.css">
+   
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="2_1_beranda.js"></script>
+    <script src="2_2_beranda.js"></script>
+    <script src="Test/carousel.js"></script>
+    <script src="4_Halaman_Series_Genre.js"></script>
+    <script src="5_genre_pop_up.js"></script>
+</head>
+
+<body>
+    <div class="background">
+
+        <div id="outer-container" class="outer-container">
+        <div class="appear_detail">
+            <img class="gotg3" src="assets/GOTGVol3.png">
+            <div class="container-bottom">
+                <div class="close">
+                    <button onclick="closePopup()">X</button>
+
+                    
+
+                </div>
+                <div class="tittle">Guardian of The Galaxy Vol. 3</div>
+                <div class="action-buttons-pop-up">
+                    <button class="start-button-pop-up">Mulai</button>
+                    <button class="plus">
+                        <img src="assets/img/plus.png">
+                    </button>
+                    <button class="sound-button" id="sound-button">
+                        <img src="assets/sound-icon.png" alt="Sound Icon" class="sound-icon" id="sound-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="desc">
+            <div class="box1">
+                <div class="episodes">
+                    <p>2023</p>
+                    <p>2j 29m</p>
+                    <button class="boxPG">
+                        <span>PG-13</span>
+                    </button>
+                </div>
+                <div class="sinopsis">
+                    <p>Masih goyah karena kehilangan Gamora, 
+                        Peter Quill mengumpulkan timnya untuk mempertahankan alam semesta dan salah satu dari 
+                        mereka - sebuah misi yang bisa berarti akhir dari Penjaga jika tidak berhasil..</p>
+                </div>
+            </div>
+
+            <div class="box2">
+                <table class="info-table">
+                    <tr>
+                        <td class="label">Cast</td>
+                        <td class="colon">:</td>
+                        <td class="value">Chris Pratt, Chukwudi Iwuji, Bradley Cooper, dan lain lain</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Genre</td>
+                        <td class="colon">:</td>
+                        <td class="value">Aksi, Petualangan, Komedi</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Pembuat Film</td>
+                        <td class="colon">:</td>
+                        <td class="value">James Gunn</td>
+                    </tr>
+                </table>
+                
+                
+                
+            </div>
+        </div>
+
+        <div class="list-episodes-container">
+            <div class="top-left-text">
+                Rekomendasi Serupa <br><br>
+            </div>
+            <div class="list-episodes-container">
+                <div class="list-episode">
+                    <div class="list">
+                        <img src="assets/TomorrowWar.png" class="img-episode">
+                        <img src="assets/Quantumania.png" class="img-episode">
+                        <img src="assets/GOTG3.png" class="img-episode">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        </div>
+        
+
+        
+        
+        
+
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="left-section">
+                    <div class="logo">
+                        <img src="assets/director-logo.svg" alt="Chill Logo">
+                        <h1>CHILL</h1>
+                    </div>
+                    <ul id="navbar">
+                        <li class="lih"><a href="default.asp" class="active">Series</a></li>
+                        <li class="lih"><a href="film.asp">Film</a></li>
+                        <li class="lih"><a href="daftar-saya.asp">Daftar Saya</a></li>
+                    </ul>
+                </div>
+                <div class="profile">
+                    <img src="assets/user-profile.png" alt="User Profile" class="profile-icon">
+                    <div class="dropdown">
+                        <a href="profile.asp">Profil Saya</a>
+                        <a href="settings.asp">Ubah Premium</a>
+                        <a href="index.html">Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-main-topic">
+        <img src="assets/img/dutyafterschool.png" alt="Snow" class="responsive-img">
+        <div class="container-main-text">
+            <div class="genre-dropdown">
+                <button class="genre-button">Genre &#9662;</button>
+                <div class="genre-content">
+                    <div class="genre-column">
+                        <a href="#" id="aksi-link">Aksi</a>
+                        <a href="#">Anak-anak</a>
+                        <a href="#">Anime</a>
+                        <a href="#">Britania</a>
+                        <a href="#">Drama</a>
+                        <a href="#">Fantasi Ilmiah & Fantasi</a>
+                        <a href="#">Kejahatan</a>
+                    </div>
+                    <div class="genre-column" id="aksi-content">
+                        <a href="#">KDrama</a>
+                        <a href="#">Komedi</a>
+                        <a href="#">Petualangan</a>
+                        <a href="#">Perang</a>
+                        <a href="#">Romantis</a>
+                        <a href="#">Sains & Alam</a>
+                        <a href="#">Thriller</a>
+                    </div>
+                </div>
+            </div>
+            <div class="das">Duty After School</div>
+            <br>
+            <div class="text-des">
+                Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.
+                <div class="action-buttons">
+                    <button class="start-button">Mulai</button>
+                    <button class="more-info-button">Selengkapnya</button>
+                    <div class="age-rating">18+</div>
+                    <button class="sound-button" id="sound-button">
+                        <img src="assets/sound-icon.png" alt="Sound Icon" class="sound-icon" id="sound-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="lanjut-nonton">
+            <h2>Melanjutkan Tonton Film</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-button left prevBtn">&#9664;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img class="img1" src="assets/1-DontLookUp.png" alt="Don't Look Up" onclick="openPopup()">
+                        <div class="rating-content">
+                            <p>Don't Look Up</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/2-TheBatman.png" alt="The Batman">
+                        <div class="rating-content">
+                            <p>The Batman</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/3-Bluelock.png" alt="Blue Lock">
+                        <div class="rating-content">
+                            <p>Blue Lock</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/4-Otto.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button right nextBtn">&#9654;</button>
+        </div>
+
+        <!-- Top Rating Film dan Series Hari ini -->
+        <div class="lanjut-nonton">
+            <h2>Top Rating Film dan Series Hari ini</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-button left prevBtn">&#9664;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img class="img1" src="assets/5-Suzume.png" alt="Don't Look Up">
+                        <div class="rating-content">
+                            <p>Don't Look Up</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/6-JurrassicWorld.png" alt="The Batman">
+                        <div class="rating-content">
+                            <p>The Batman</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/7-Sonic2.png" alt="Blue Lock">
+                        <div class="rating-content">
+                            <p>Blue Lock</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button right nextBtn">&#9654;</button>
+        </div>
+
+        <!-- Film Trending -->
+        <div class="lanjut-nonton">
+            <h2>Film Trending</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-button left prevBtn">&#9664;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img class="img1" src="assets/5-Suzume.png" alt="Don't Look Up">
+                        <div class="rating-content">
+                            <p>Don't Look Up</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/6-JurrassicWorld.png" alt="The Batman">
+                        <div class="rating-content">
+                            <p>The Batman</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/7-Sonic2.png" alt="Blue Lock">
+                        <div class="rating-content">
+                            <p>Blue Lock</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button right nextBtn">&#9654;</button>
+        </div>
+
+        <div class="lanjut-nonton">
+            <h2>Rilis Baru</h2>
+        </div>
+        <div class="carousel">
+            <button class="carousel-button left prevBtn">&#9664;</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide current-slide">
+                        <img class="img1" src="assets/5-Suzume.png" alt="Don't Look Up">
+                        <div class="rating-content">
+                            <p>Don't Look Up</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/6-JurrassicWorld.png" alt="The Batman">
+                        <div class="rating-content">
+                            <p>The Batman</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/7-Sonic2.png" alt="Blue Lock">
+                        <div class="rating-content">
+                            <p>Blue Lock</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                    <li class="carousel-slide">
+                        <img src="assets/8-BigHero6.png" alt="A Man Called Otto">
+                        <div class="rating-content">
+                            <p>A Man Called Otto</p>
+                            <p>⭐ 4.5/5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-button right nextBtn">&#9654;</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="container-footer-main">
+                <div class="chil-footer">
+                    <img src="assets/Logo.png">
+                    <p>@2023 Chill All Rights Reserved.</p>
+                </div>
+                <div class="Genre">
+                    <div class="information-footer">
+                        <div class="genre"><h4>Genre</h4></div>
+                        <ul>
+                            <br><br>
+                            <li><a href="#">Aksi</a></li><br>
+                            <li><a href="#">Anak-Anak</a></li><br>
+                            <li><a href="#">Anime</a></li><br>
+                            <li><a href="#">Britania</a></li><br>
+                        </ul>
+                        <ul>
+                            <br><br>
+                            <li><a href="#">Drama</a></li><br>
+                            <li><a href="#">Fantasi Ilmiah & Fantasi</a></li><br>
+                            <li><a href="#">Kejahatan</a></li><br>
+                            <li><a href="#">KDrama</a></li><br>
+                        </ul>
+                        <ul>
+                            <br><br>
+                            <li><a href="#">Komedi</a></li><br>
+                            <li><a href="#">Petualangan</a></li><br>
+                            <li><a href="#">Perang</a></li><br>
+                            <li><a href="#">Romantis</a></li><br>
+                        </ul>
+                        <ul>
+                            <br><br>
+                            <li><a href="#">Sains & Alam</a></li><br>
+                            <li><a href="#">Thriller</a></li><br>
+                        </ul>
+                        <div class="genre"><h4>Bantuan</h4></div>
+                        <ul>
+                            <br><br>
+                            <li><a href="#">FAQ</a></li><br>
+                            <li><a href="#">Contact</a></li><br>
+                            <li><a href="#">Privacy</a></li><br>
+                            <li><a href="#">Syarat & Ketentuan</a></li><br>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

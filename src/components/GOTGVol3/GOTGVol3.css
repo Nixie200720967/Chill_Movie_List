@@ -1,0 +1,453 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181a1c;
+
+}
+
+.background {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center align if needed */
+
+}
+
+.outer-container {
+    width: 927px;
+    height: 2000px;
+    background-color: #181A1C;
+    overflow-y: scroll;
+    /* or auto */
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.outer-container::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and other WebKit browsers */
+}
+
+
+.container-main-topic {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 587px;
+    gap: 0px;
+    opacity: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.appear_detail {
+    position: relative;
+    width: 927px;
+    height: 500px;
+    border-radius: 16px 0px 0px 0px;
+    background-color: #181A1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.desc {
+    margin-bottom: 20px;
+    position: relative;
+    width: 927px;
+    height: 224px;
+    border-radius: 16px;
+    background-color: #181A1C;
+    color: white;
+    padding: 24px 80px 24px 80px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    /* Change to row to place items side by side */
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    opacity: 0px;
+}
+
+.box1 {
+    width: 50%;
+    /* Adjust width to fit within the parent container */
+    height: 200px;
+    /* background-color: aqua; */
+}
+
+.box2 {
+    width: 50%;
+    /* Adjust width to fit within the parent container */
+    height: 200px;
+}
+
+.boxPG {
+    /* /* width: 60px; */
+    height: 20px;
+    border-radius: 10%;
+    border: 1px solid #BFBFBF;
+    /* Light gray border color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #BFBFBF;
+    /* Light gray text color */
+    background-color: #1C1C1C;
+    /* Dark background color */
+    cursor: pointer;
+}
+
+.circleage span {
+    display: inline-block;
+}
+
+
+
+.episodes {
+    display: flex;
+    width: 300x;
+    height: 48px;
+    padding: 4px 0px 4px 0px;
+    gap: 16px;
+    opacity: 0px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+    color: #C1C2C4;
+    align-items: center;
+
+}
+
+.sinopsis {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+}
+
+.info-table {
+    margin-top: 20px;
+    /* Dark background */
+    color: #ffffff;
+    /* White text color */
+    padding: 20px;
+    /* Padding around the table */
+    border-radius: 8px;
+    /* Rounded corners */
+    font-family: Arial, sans-serif;
+    /* Font */
+    width: 370px;
+    /* Width of the table */
+    border-collapse: collapse;
+    /* Remove space between cells */
+}
+
+.info-table .label {
+    width: 100px;
+    /* Width for the label column */
+    font-weight: bold;
+    /* Bold text for labels */
+    vertical-align: top;
+    /* Align text to the top */
+    padding-right: 5px;
+    /* Space between label and colon */
+
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: left;
+
+}
+
+.info-table .colon {
+    width: 10px;
+    /* Narrow width for the colon */
+    text-align: left;
+    /* Align colon to the left */
+    vertical-align: top;
+    /* Align text to the top */
+}
+
+.info-table .value {
+    line-height: 1.5;
+    /* Line height for readability */
+    padding-left: 0px;
+    /* No left padding */
+    vertical-align: top;
+    /* Align text to the top */
+}
+
+
+.list-episodes-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center horizontally within the container */
+    width: 927px;
+    height: 700px;
+    opacity: 0px;
+    background-color: #181A1C;
+}
+
+.top-left-text {
+    width: 763px;
+    color: white;
+    /* Text color */
+    margin: 10px 0;
+    /* Optional: Add spacing between items */
+}
+
+.list-episodes {
+    width: 763px;
+    height: 700px;
+    color: white;
+    /* Text color */
+    margin: 10px 0;
+    /* Optional: Add spacing between items */
+}
+
+.episode1,
+.episode2,
+.episode3,
+.episode4,
+.episode5 {
+    display: flex;
+    /* Enable Flexbox for child elements */
+    align-items: center;
+    /* Center vertically */
+    justify-content: left;
+    /* Center horizontally */
+    height: 137px;
+    width: 763px;
+}
+
+.number-episode {
+    display: flex;
+    /* Use Flexbox to arrange items horizontally */
+    align-items: center;
+    /* Align items vertically in the center */
+    gap: 10px;
+    /* Optional: Add space between the items */
+}
+
+.number-episode p {
+    margin: 0;
+    /* Remove default margin to ensure proper alignment */
+    color: white;
+    /* Ensure the text color is visible */
+}
+
+.number-episode img {
+    max-width: 100%;
+    /* Ensure image scales properly */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+.img-episode {
+    margin-right: 20px;
+}
+
+.desc-episode {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    width: 73%;
+}
+
+.title-duration {
+    display: flex;
+    /* Align title and duration horizontally */
+    justify-content: space-between;
+    /* Space them apart */
+    align-items: center;
+    /* Center them vertically */
+    width: 92%;
+}
+
+.title,
+.duration {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.description {
+    margin-top: 5px;
+    /* Add space above description */
+    color: #b3b3b3;
+    /* Optional: Adjust color for the description */
+}
+
+
+.tedlasso {
+    display: block;
+    width: 100%;
+    /* Or adjust to fit the parent container */
+    height: auto;
+}
+
+
+.container-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 800px;
+    padding: 10px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 69px;
+    margin-bottom: 74px;
+}
+
+
+.close{
+    width: 800px;
+    align-items: center;
+    text-align: right;
+    justify-content: right;
+    margin-bottom: 260px;
+
+}
+
+.close button{
+    background-color: #181A1C;
+    ; /* Transparent background */
+    border: 2px solid black; /* Black border */
+    border-radius: 50%; /* Make it circular */
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    font-size: 18px; /* Adjust font size */
+
+    cursor: pointer; /* Pointer cursor on hover */
+
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color:#C1C2C4;
+    ;
+}
+
+.close button:hover {
+    background-color: #f1f1f1; /* Optional: Change background on hover */
+}
+
+.tittle {
+    font-family: Lato;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.action-buttons-pop-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 92%;
+}
+
+.start-button-pop-up {
+    background-color: #0000FF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+.plus {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sound-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appear_detail {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .container-bottom {
+        padding: 10px;
+    }
+
+    .tittle {
+        font-size: 1.5rem;
+    }
+
+    .start-button-pop-up {
+        width: 80px;
+        font-size: 0.875rem;
+        padding: 8px 16px;
+    }
+
+    .plus {
+        width: 35px;
+        height: 35px;
+        padding: 8px;
+    }
+
+    .sound-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
