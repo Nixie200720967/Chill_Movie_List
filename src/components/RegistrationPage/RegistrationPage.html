@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chill</title>
+   
+    <link rel="stylesheet" href="./RegistrationPage.css">
+    <script src="./RegistrationPage.js"></script> 
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="logo-container">
+                <img src="/src/assets/LoginPage/directorlogo.png" alt="Chill Logo">
+                <h1>CHILL</h1>
+            </div>
+            <h2 class="title">Daftar</h2>
+            <p>Selamat datang kembali!</p>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <div class="password-wrapper" style="position: relative;">
+                        <input type="password" id="password" placeholder="Masukkan kata sandi">
+                        <img src="/src/assets/LoginPage/eye-icon.png" class="toggle-password" alt="Toggle Password Visibility" onclick="togglePasswordVisibility('password')">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Konfirmasi Kata Sandi</label>
+                    <div class="password-wrapper" style="position: relative;">
+                        <input type="password" id="confirm-password" placeholder="Masukkan kata sandi">
+                        <img src="/src/assets/LoginPage/eye-icon.png" class="toggle-password" alt="Toggle Password Visibility" onclick="togglePasswordVisibility('confirm-password')">
+                    </div>
+                </div>
+                <div class="actions">
+                    
+                    <a href="#" onclick="redirectToLogin()">Sudah punya akun? <span class="bold-text">Masuk</span></a>
+<script>
+    function redirectToLogin() {
+        window.location.href = "/index.html";
+    }
+</script>
+
+
+                </div>
+                <button type="submit">Daftar</button>
+                <div class="or">Atau</div>
+                <button type="button" class="google-login">
+                    <img src="/src/assets/LoginPage/google-logo.png" alt="Google Logo" class="google-logo">
+                    Daftar Dengan Google
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

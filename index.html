@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Chill</title>
+    <link rel="stylesheet" href="./src/components/LoginPage/LoginPage.css">
+    <script src="1_1_LApp.js"></script> 
+    <script src="1_1_LMutableComponent.js"></script> 
+    <script type="module" src="/src/main.jsx"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Londrina+Solid' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="logo-container">
+                <img src="./src/assets/LoginPage/directorlogo.png" alt="Chill Logo">
+                <h1>CHILL</h1>
+            </div>
+            <h2 class="title">Masuk</h2>
+            <p>Selamat datang kembali!</p>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Masukkan username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Kata Sandi</label>
+                    <div style="position: relative;">
+                        <input type="password" id="password" placeholder="Masukkan kata sandi">
+                        <img src="./src/assets/LoginPage/eye-icon.png" class="toggle-password" alt="Toggle Password Visibility" onclick="togglePasswordVisibility()">
+                    </div>
+                </div>
+                
+                <!-- Error message placeholder -->
+                <p id="error-message" style="color: red; display: none;">Invalid credentials, please check your username and password.</p>
+                
+                <div class="actions">
+                    <a href="#" onclick="redirectToRegistration()">Belum punya akun? <span class="bold-text">Daftar</span></a>
+                    <a href="#"><span class="forget-pass">kata sandi?</span></a>
+                </div>
+                <button type="submit" onclick="validateLogin(event)">Masuk</button>
+                <div class="or">Atau</div>
+                <button type="button" class="google-login">
+                    <img src="./src/assets/LoginPage/google-logo.png" alt="Google Logo" class="google-logo">
+                    Masuk dengan Google
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+
+        function redirectToRegistration() {
+            window.location.href = "/src/components/RegistrationPage/RegistrationPage.html";
+        }
+
+        function validateLogin(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessageElement = document.getElementById('error-message');
+            
+            // Simple validation for demo purposes
+            if (username === 'admin' && password === 'admin') {
+                errorMessageElement.style.display = 'none'; // Hide error message on success
+                window.location.href = "/src/components/Beranda/Beranda.html"; // Redirect on success
+            } else {
+                errorMessageElement.style.display = 'block'; // Show error message
+            }
+        }
+    </script>
+</body>
+</html>
